@@ -18,12 +18,12 @@ h1 {
 button {
   color: white;
   border-radius: 2.5em;
-  width: 10em;
+  width: 9em;
   height: 3em;
   background-color: black;
   font-weight: 600;
   font-size: 1.2em;
-  letter-spacing: .1em;
+  /* letter-spacing: .1em; */
   margin-top: 4em;
   height: 2em;
 }
@@ -36,7 +36,7 @@ button, input[type="text"]:focus, input[type="text"] {
   box-shadow: none;
 }
 
-#containerDiv {
+#containerDiv, #resultsDiv {
   background-color: #FDD932;
   height: 85vh;
   margin: 3em;
@@ -73,3 +73,7 @@ input[type="text"]:focus {
 input[type="text"]:hover {
   width: 25em;
 } 
+
+#resultsDiv {
+  display: none;
+}
