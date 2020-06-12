@@ -16,6 +16,11 @@ h1 {
   padding: 0;
 }
 
+h2 {
+  font-size: 1em;
+  font-weight: 800;
+}
+
 button {
   color: white;
   border-radius: 2.5em;
@@ -47,15 +52,11 @@ button, input[type="text"]:focus, input[type="text"] {
   grid-column: 2 / span 1;
   grid-row: 2 /span 1;
   background-color: #FDD932;
-  height: 88vh;
-  display: flex;
-  /* border: solid 1px red; */
+  height: 87vh;
 }
 
 #userInputForm {
-  /* border: 1px solid blue; */
   padding: 5em;
-  /* display: flex; */
 }
 
 input {
@@ -95,6 +96,49 @@ input[type="text"]:hover {
   font-size: 3em;
   font-weight: 800;
   margin: .1em 0 .1em .5em;
-
 }
+
+#resetButton {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+#resetButtonTop {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+#resetButtonLeft {
+  transform: rotate(270deg); 
+  width: 5.5em;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+#resetButtonRight {
+  transform: rotate(90deg); 
+  width: 5.5em;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+#resetButtonBottom {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+/*  background-color: black;
+  color: white;
+  padding: 1em 1em; */
+
 
