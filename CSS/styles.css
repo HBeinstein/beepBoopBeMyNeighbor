@@ -4,30 +4,31 @@ body {
 }
 
 p {
-  font-size: 1.5em;
-  font-weight: 500;
-  margin: 1em 0 0;
+  font-size: 2.2em;
+  font-weight: 400;
+  margin: 0;
 }
 
 h1 {
-  font-size: 6em;
-  font-weight: 500;
+  font-size: 9em;
+  font-weight: 400;
   margin: 0 0 1.3em 0;
   padding: 0;
 }
 
 h2 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   margin: 1.6em;
 }
 
 button {
   color: white;
+  border: 1px solid white !important;
   border-radius: 2.5em;
   width: 9em;
   height: 3.5em;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   font-weight: 600;
   font-size: 1.2em;
   margin-top: 4em;
@@ -36,9 +37,9 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color:black;
-  border: 1.5px solid black;
+  border: none !important;
+  background-color: black;
+  color:white;
 }
 
 button, input[type="text"]:focus, input[type="text"] {
@@ -47,6 +48,12 @@ button, input[type="text"]:focus, input[type="text"] {
   border: none;
   outline: none;
   box-shadow: none;
+}
+
+::placeholder {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 #overallContainer {
@@ -62,14 +69,9 @@ button, input[type="text"]:focus, input[type="text"] {
 }
 
 #containerDiv {
-  text-align: center;
   display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 10em 1fr;
-}
-
-#userInputForm {
-  padding: 5em;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 13em 1fr;
 }
 
 input[type="text"], #containerDiv, #resultsContainer {
@@ -77,7 +79,7 @@ input[type="text"], #containerDiv, #resultsContainer {
 }
 
 input[type="text"] {
-  border-bottom: 1.2px solid black;
+  border-bottom: 1.2px solid white;
   width: 20em;
   height: 2em;
   transition: width 0.2s ease-in-out;
@@ -86,13 +88,19 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-bottom: 1.2px solid black;
+  border-bottom: 1.2px solid white;
   width: 22em;
 }
 
 input[type="text"]:hover {
   width: 22em;
 } 
+
+#userNameInput, #userNameInput {
+  color: white;
+  padding: .2em;
+  margin: 1em 0;
+}
 
 #resultsContainer {
   display: none;
@@ -151,9 +159,31 @@ input[type="text"]:hover {
   display: none;
 }
 
-
-/*  background-color: black;
+#mrRobo {
   color: white;
-  padding: 1em 1em; */
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  justify-self: left;
+  padding: 0 1.5rem;
+}
 
+#howItWorks {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  padding: .5rem 5rem 0 2rem;
+  color: white;
+  justify-self: left;
+  letter-spacing: .01em;
+}
 
+#formContainer {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  justify-self: left;
+  color: white;
+  padding: .5rem 0 0 1rem;
+}
+
+#formHeader {
+  margin-bottom: 1.2em;
+}
