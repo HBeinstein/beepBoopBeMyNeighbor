@@ -1,5 +1,6 @@
 body {
   font-family: 'helvetica neue', sans-serif;
+  margin: 0;
 }
 
 p {
@@ -36,16 +37,22 @@ button, input[type="text"]:focus, input[type="text"] {
   box-shadow: none;
 }
 
+#overallContainer {
+  display: grid;
+  grid-template-columns: 3em 1fr 3em;
+  grid-template-rows: 3em 1fr 3em;
+}
+
 #containerDiv, #resultsContainer {
+  grid-column: 2 / span 1;
+  grid-row: 2 /span 1;
   background-color: #FDD932;
-  height: 85vh;
-  margin: 3em;
+  height: 88vh;
   display: flex;
   /* border: solid 1px red; */
 }
 
 #userInputForm {
-  width: 90em;
   /* border: 1px solid blue; */
   padding: 5em;
   /* display: flex; */
