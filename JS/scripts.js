@@ -1,11 +1,11 @@
-function beepBoopOrNeighbor(num) {
+function beepBoopOrNeighbor(num, name) {
   for(x=1; x<=num; x++) {
     if(x.toString().includes("3")) {
-      console.log("this has a three");
+      console.log(`Won't you be my neighbor ${name}?`);
     } else if(x.toString().includes("2")) {
-    console.log("This has a 2");
+    console.log("Boop!");
     } else if(x.toString().includes("1")) {
-      console.log("This has a 1");
+      console.log("Beep!");
     } else {
       console.log(x);
     }
@@ -17,6 +17,8 @@ $( document ).ready(function() {
     event.preventDefault()
 
     const parsedUserInput = parseInt($("#userNumInput").val());
-    beepBoopOrNeighbor(parsedUserInput);
+    const userNameInput = $("#userNameInput").val();
+
+    beepBoopOrNeighbor(parsedUserInput, userNameInput);
   });
 });
