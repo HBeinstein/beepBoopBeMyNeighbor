@@ -36,7 +36,7 @@ button, input[type="text"]:focus, input[type="text"] {
   box-shadow: none;
 }
 
-#containerDiv, #resultsDiv {
+#containerDiv, #resultsContainer {
   background-color: #FDD932;
   height: 85vh;
   margin: 3em;
@@ -74,6 +74,12 @@ input[type="text"]:hover {
   width: 25em;
 } 
 
-#resultsDiv {
+#resultsContainer {
   display: none;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }

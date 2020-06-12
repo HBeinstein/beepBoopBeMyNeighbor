@@ -2,13 +2,13 @@ function beepBoopOrNeighbor(num, name) {
   let results
   for(x=1; x<=num; x++) {
     if(x.toString().includes("3")) {
-      $("#resultsDiv").append(`<p>Won't you be my neighbor ${name}?</p>`);
+      $("#resultsContainer").append(`<p>Won't you be my neighbor ${name}?</p>`);
     } else if(x.toString().includes("2")) {
-      $("#resultsDiv").append("<p>Boop!</p>");
+      $("#resultsContainer").append("<p>Boop!</p>");
     } else if(x.toString().includes("1")) {
-      $("#resultsDiv").append("<p>Beep!</p>");
+      $("#resultsContainer").append("<p>Beep!</p>");
     } else {
-      $("#resultsDiv").append(`<p>${x}</p>`);
+      $("#resultsContainer").append(`<p>${x}</p>`);
     }
   }
 }
@@ -23,6 +23,6 @@ $( document ).ready(function() {
     beepBoopOrNeighbor(parsedUserInput, userNameInput);
 
     $("#containerDiv").hide();
-    $("#resultsDiv").show();
+    $("#resultsContainer").show();
   });
 });
