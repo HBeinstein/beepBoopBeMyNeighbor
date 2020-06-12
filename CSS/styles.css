@@ -17,8 +17,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1.2em;
   margin: 1.6em;
   color: #ffa4da;
 }
@@ -39,8 +39,8 @@ button {
 
 button:hover {
   border: none !important;
-  background-color: black;
-  color:white;
+  background-color: white;
+  color: #ffa4da;
 }
 
 button, input[type="text"]:focus, input[type="text"] {
@@ -191,6 +191,10 @@ input[type="text"]:hover {
   margin-bottom: 1.2em;
 }
 
+.resetButton {
+  transition: all 0.15s ease-in-out;
+}
 .resetButton:hover {
-
+  color: rgba(252, 159, 215, 0.3);
+  cursor: pointer;
 }
