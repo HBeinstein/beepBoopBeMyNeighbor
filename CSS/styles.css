@@ -11,14 +11,15 @@ p {
 
 h1 {
   font-size: 6em;
-  font-weight: 800;
+  font-weight: 500;
   margin: 0 0 1.3em 0;
   padding: 0;
 }
 
 h2 {
   font-size: 1em;
-  font-weight: 800;
+  font-weight: 500;
+  margin: 1.6em;
 }
 
 button {
@@ -149,6 +150,7 @@ input[type="text"]:hover {
   align-self: center;
   display: none;
 }
+
 
 /*  background-color: black;
   color: white;
