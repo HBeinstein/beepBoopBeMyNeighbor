@@ -10,7 +10,7 @@ p {
 }
 
 h1 {
-  font-size: 370%;
+  font-size: 6em;
   font-weight: 800;
   margin: 0 0 1.3em 0;
   padding: 0;
@@ -57,29 +57,28 @@ button, input[type="text"]:focus, input[type="text"] {
 #containerDiv, #resultsContainer {
   grid-column: 2 / span 1;
   grid-row: 2 /span 1;
-  /* display: flex; */
-  background-color: #FDD932;
   height: 87vh;
 }
 
 #containerDiv {
   text-align: center;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 10em 1fr;
 }
 
 #userInputForm {
-  /* justify-self: center; */
   padding: 5em;
 }
 
-input {
-  height: 1em;
+input[type="text"], #containerDiv, #resultsContainer {
+  background-color: #ffa4da;
 }
 
 input[type="text"] {
-  background-color: #FDD932;
   border-bottom: 1.2px solid black;
   width: 20em;
-  height: 3em;
+  height: 2em;
   transition: width 0.2s ease-in-out;
   font-size: 1em;
   padding-bottom: .5em;
@@ -106,15 +105,13 @@ input[type="text"]:hover {
 
 #resultsList p {
   font-size: 3em;
-  font-weight: 800;
+  font-weight: 400;
   margin: .1em 0 .1em .5em;
 }
 
-#resetButton {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-  justify-self: center;
-  align-self: center;
+#resultsList p span {
+  background: black;
+  color: white;
 }
 
 #resetButtonTop {
@@ -122,6 +119,7 @@ input[type="text"]:hover {
   grid-row: 1 / span 1;
   justify-self: center;
   align-self: center;
+  display: none;
 }
 
 #resetButtonLeft {
@@ -131,6 +129,7 @@ input[type="text"]:hover {
   grid-row: 2 / span 1;
   justify-self: center;
   align-self: center;
+  display: none;
 }
 
 #resetButtonRight {
@@ -140,6 +139,7 @@ input[type="text"]:hover {
   grid-row: 2 / span 1;
   justify-self: center;
   align-self: center;
+  display: none;
 }
 
 #resetButtonBottom {
@@ -147,6 +147,7 @@ input[type="text"]:hover {
   grid-row: 3 / span 1;
   justify-self: center;
   align-self: center;
+  display: none;
 }
 
 /*  background-color: black;
