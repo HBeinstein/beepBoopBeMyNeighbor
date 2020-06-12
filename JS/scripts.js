@@ -1,16 +1,17 @@
 function beepBoopOrNeighbor(num, name) {
-  let results
+  let results = [];
   for(x=1; x<=num; x++) {
     if(x.toString().includes("3")) {
-      $("#resultsList").append(`<p>Won't you be my neighbor <span>${name}?</span></p>`);
+      results.push(`<p>Won't you be my neighbor <span>${name}?</span></p>`);
     } else if(x.toString().includes("2")) {
-      $("#resultsList").append("<p><span>Boop!</span></p>");
+      results.push("<p><span>Boop!</span></p>");
     } else if(x.toString().includes("1")) {
-      $("#resultsList").append("<p><span>Beep!</span></p>");
+      results.push("<p><span>Beep!</span></p>");
     } else {
-      $("#resultsList").append(`<p>${x}</p>`);
+      results.push(`<p>${x}</p>`);
     }
   }
+  return results;
 }
 
 $( document ).ready(function() {
@@ -20,9 +21,21 @@ $( document ).ready(function() {
     const parsedUserInput = parseInt($("#userNumInput").val());
     const userNameInput = $("#userNameInput").val();
 
-    beepBoopOrNeighbor(parsedUserInput, userNameInput);
+    const resultOutput = beepBoopOrNeighbor(parsedUserInput, userNameInput);
+
+    for(i=0; i<resultOutput.length; i++) {
+      $("#resultsList").append(resultOutput[i]);
+    };
 
     $("#containerDiv").hide();
     $("#resultsContainer").show();
+    $("#resetButtonTop").show();
+    $("#resetButtonLeft").show();
+    $("#resetButtonRight").show();
+    $("#resetButtonBottom").show();
+
+      $(".resetButton").click(function() {
+        location.reload();
+      });
   });
 });

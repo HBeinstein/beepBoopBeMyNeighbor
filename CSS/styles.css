@@ -20,6 +20,7 @@ h2 {
   font-size: 1em;
   font-weight: 400;
   margin: 1.6em;
+  color: #ffa4da;
 }
 
 button {
@@ -85,6 +86,8 @@ input[type="text"] {
   transition: width 0.2s ease-in-out;
   font-size: 1em;
   padding-bottom: .5em;
+  color: white;
+  
 }
 
 input[type="text"]:focus {
@@ -186,4 +189,8 @@ input[type="text"]:hover {
 
 #formHeader {
   margin-bottom: 1.2em;
+}
+
+.resetButton:hover {
+
 }

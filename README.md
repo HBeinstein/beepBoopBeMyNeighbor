@@ -13,7 +13,7 @@ _This program was created as a way to practice arrays and looping. A user is abl
 * Clone the project from its GitHub repository (https://github.com/HBeinstein/beepBoop).
 * Open in your code editor of choice.
 * Drag index.html file into your browser or double click it to view site.
-* You can also view this project live on GitHub Pages at this link: .
+
 
 ## Specifications
 _The chart below shows all possible input behaviors and their expected outputs._
