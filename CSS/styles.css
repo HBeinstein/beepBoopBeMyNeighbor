@@ -1,26 +1,18 @@
 body {
   font-family: 'helvetica neue', sans-serif;
 }
-#containerDiv {
-  background-color: #FDD932;
-  height: 90vh;
-  margin: 2em;
-  display: flex;
-  /* justify-content: center; */
-  border: solid 1px red;
+
+p {
+  font-size: 2em;
+  font-weight: 500;
+  margin: .5em 0;
 }
 
-#userInputForm {
-  width: 90em;
-  border: 1px solid blue;
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  justify-content: center;
-}
-
-input, button {
-  height: 2em;
+h1 {
+  font-size: 9em;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -32,11 +24,38 @@ button {
   font-weight: 600;
   font-size: 1.2em;
   letter-spacing: .1em;
+  margin-top: 4em;
 }
 
-input {
+#containerDiv {
+  background-color: #FDD932;
+  height: 85vh;
+  margin: 3em;
+  display: flex;
+  /* border: solid 1px red; */
+}
+
+#userInputForm {
+  width: 90em;
+  /* border: 1px solid blue; */
+  padding: 5em;
+}
+
+input, button {
+  height: 2em;
+}
+
+input[type="text"] {
   background-color: #FDD932;
   border-bottom: 1px solid black;
   box-shadow: none;
-  /* border-style: none; */
+  width: 20em;
+  transition: width 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-bottom: 1px solid white;
+  background-color: #E5E5E5;
+  box-shadow: none;
+  width: 25em;
 }
