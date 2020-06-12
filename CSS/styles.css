@@ -1,0 +1,42 @@
+body {
+  font-family: 'helvetica neue', sans-serif;
+}
+#containerDiv {
+  background-color: #FDD932;
+  height: 90vh;
+  margin: 2em;
+  display: flex;
+  /* justify-content: center; */
+  border: solid 1px red;
+}
+
+#userInputForm {
+  width: 90em;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+input, button {
+  height: 2em;
+}
+
+button {
+  color: white;
+  border-radius: 2.5em;
+  width: 10em;
+  height: 3em;
+  background-color: black;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+}
+
+input {
+  background-color: #FDD932;
+  border-bottom: 1px solid black;
+  box-shadow: none;
+  /* border-style: none; */
+}
