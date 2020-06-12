@@ -11,7 +11,7 @@ p {
 h1 {
   font-size: 370%;
   font-weight: 800;
-  margin: 0;
+  margin: 0 0 1.3em 0;
   padding: 0;
 }
 
@@ -67,11 +67,11 @@ input[type="text"] {
 
 input[type="text"]:focus {
   border-bottom: 1.2px solid black;
-  width: 25em;
+  width: 22em;
 }
 
 input[type="text"]:hover {
-  width: 25em;
+  width: 22em;
 } 
 
 #resultsContainer {
@@ -83,3 +83,11 @@ input[type="text"]:hover {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
+
+#resultsList p {
+  font-size: 3em;
+  font-weight: 800;
+  margin: .1em 0 .1em .5em;
+
+}
+
