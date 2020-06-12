@@ -16,16 +16,20 @@ _This program was created as a way to practice arrays and looping. A user is abl
 * You can also view this project live on GitHub Pages at this link: .
 
 ## Specifications
+_The chart below shows all possible input behaviors and their expected outputs._
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
-| A year is not a leap year if it is not divisible by 4 | 1993 | false | 
-| A year is a leap year if it is divisible by 4 | 2004 | true |
-| A year is not a leap year if it is divisible by 100 | 1900 | false |
-| A year is a leap year if it is divisible by 400 | 2000 | true |
+| A number contains a "1" | 11 |  "Beep!" | 
+| A number contains a "2" | 2 | "Boop!" |
+| A number contains a "3" | 37 | "Won't you be my neighbor?" |
+| A number contains a "1" and a "2" | 12 | "Boop!" |
+| A number contains a "1" and a "3" | 13 | "Won't you be my neighbor?" |
+| A number contains a "2" and a "3" | 23 | "Won't you be my neighbor?" |
+
 ## Known Bugs
 
-_No known bugs._
+_No known bugs. If a bug is found, please contact me at the address provided below. _
 
 ## Support and contact details
 
