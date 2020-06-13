@@ -1,6 +1,6 @@
 # _Mr. Roboger's Neighborhood_
 
-#### _6/10/2020_
+#### _6/12/2020_
 
 #### By: _**Hannah Beinstein**_
 
@@ -10,7 +10,7 @@ _This program was created as a way to practice arrays and looping. A user is abl
 
 ## Setup/Installation Requirements
 
-* Clone the project from its GitHub repository (https://github.com/HBeinstein/beepBoop).
+* Clone the project from its GitHub repository (https://github.com/HBeinstein/beepBoopBeMyNeighbor).
 * Open in your code editor of choice.
 * Drag index.html file into your browser or double click it to view site.
 

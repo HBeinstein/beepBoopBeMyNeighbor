@@ -23,6 +23,13 @@ h2 {
   color: #ffa4da;
 }
 
+h3 {
+  margin: 1.2em;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
 button {
   color: white;
   border: 1px solid white !important;
@@ -51,6 +58,35 @@ button, input[type="text"]:focus, input[type="text"] {
   box-shadow: none;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+input[type="text"], #containerDiv, #resultsContainer {
+  background-color: #ffa4da;
+}
+
+input[type="text"] {
+  border-bottom: 1.2px solid white;
+  width: 17em;
+  height: 2em;
+  transition: width 0.2s ease-in-out;
+  font-size: 1em;
+  padding-bottom: .5em;
+  color: white;
+  
+}
+
+input[type="text"]:focus {
+  border-bottom: 1.2px solid white;
+  width: 20em;
+}
+
+input[type="text"]:hover {
+  width: 22em;
+} 
+
 ::placeholder {
   color: white;
   font-size: 1.5em;
@@ -75,30 +111,6 @@ button, input[type="text"]:focus, input[type="text"] {
   grid-template-rows: 13em 1fr;
 }
 
-input[type="text"], #containerDiv, #resultsContainer {
-  background-color: #ffa4da;
-}
-
-input[type="text"] {
-  border-bottom: 1.2px solid white;
-  width: 20em;
-  height: 2em;
-  transition: width 0.2s ease-in-out;
-  font-size: 1em;
-  padding-bottom: .5em;
-  color: white;
-  
-}
-
-input[type="text"]:focus {
-  border-bottom: 1.2px solid white;
-  width: 22em;
-}
-
-input[type="text"]:hover {
-  width: 22em;
-} 
-
 #userNameInput, #userNameInput {
   color: white;
   padding: .2em;
@@ -108,11 +120,6 @@ input[type="text"]:hover {
 #resultsContainer {
   display: none;
   overflow: scroll;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
 }
 
 #resultsList p {
