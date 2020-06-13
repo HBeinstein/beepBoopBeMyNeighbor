@@ -1,12 +1,14 @@
 body {
   font-family: 'helvetica neue', sans-serif;
   margin: 0;
+  cursor: url('../IMG/click.png'), auto;
 }
 
 p {
   font-size: 2.2em;
   font-weight: 400;
   margin: 0;
+  
 }
 
 h1 {
@@ -20,7 +22,7 @@ h2 {
   font-weight: 600;
   font-size: 1.2em;
   margin: 1.6em;
-  color: #ffa4da;
+  color: black;
 }
 
 h3 {
@@ -202,6 +204,6 @@ input[type="text"]:hover {
   transition: all 0.15s ease-in-out;
 }
 .resetButton:hover {
-  color: rgba(252, 159, 215, 0.3);
-  cursor: pointer;
+  color: rgba(252, 159, 215, 1);
+  /* cursor: pointer; */
 }

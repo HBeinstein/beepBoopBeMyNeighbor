@@ -18,6 +18,11 @@ $( document ).ready(function() {
   $("#userInputForm").submit(function() {
     event.preventDefault()
 
+    // if($("#userNumInput").val() === 0) {
+    //   alert("Please enter a valid number and try again!");
+    // }
+    
+
     const parsedUserInput = parseInt($("#userNumInput").val());
     const userNameInput = $("#userNameInput").val();
 
