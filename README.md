@@ -6,7 +6,7 @@
 
 ## Description:
 
-_This program was created as a way to practice arrays and looping. A user is able to enter a number as an input, and the program will count up to that number and add the results to the page. Numbers that contain a 1 will be replaced by the word "beep", numbers that contain a 2 will be replaced by the word "boop" and numbers that contain a 3 will be replaced by the phrase "Won't you be my neighbor?". If a number contains multiples of these digits, the program will prioritize the number 3 over the number 2, and the number 2 over the number 1._
+_This program was created as a way to practice arrays and looping. A user is able to enter a number as an input, and the program will count up to that number and add the results to the page. Numbers that contain a 1 will be replaced by the word "beep", numbers that contain a 2 will be replaced by the word "boop" and numbers that contain a 3 will be replaced by the phrase "Won't you be my neighbor?". If a number contains multiples of these digits, the program will prioritize the number 3 over the number 2, and the number 2 over the number 1. See the spec chart below for more information._
 
 ## Setup/Installation Requirements
 
@@ -22,6 +22,7 @@ _The chart below shows all possible input behaviors and their expected outputs._
 | ------------- |:-------------:| -----:|
 | Non-numeric values will not be accepted | ! | "Please enter a valid number" | 
 | The number is 0 | 0 | "Sorry, I can't count to 0, please enter a new number!" | 
+| The number is greater than 1000 | 1001 | "Please enter a number smaller than 1000!" | 
 | A number does not contain a "1", "2", or "3" | 5 | "5" | 
 | A number contains a decimal | 5.7 | "5" | 
 | A number contains a "1" | 11 |  "Beep!" | 
