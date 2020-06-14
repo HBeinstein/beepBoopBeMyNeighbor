@@ -1,7 +1,7 @@
 body {
   font-family: 'helvetica neue', sans-serif;
   margin: 0;
-  cursor: url('../IMG/click2.svg'), auto;
+  cursor: url('../IMG/click.png'), auto;
 }
 
 p {
@@ -49,6 +49,7 @@ button:hover {
   border: none !important;
   background-color: white;
   color: black;
+  cursor: url('../IMG/click.png'), auto;
 }
 
 button, input[type="text"]:focus, input[type="text"] {
@@ -201,5 +202,4 @@ input[type="text"]:hover {
 }
 .resetButton:hover {
   color: #FCD846;
-  /* cursor: pointer; */
 }
