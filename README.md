@@ -21,8 +21,9 @@ _The chart below shows all possible input behaviors and their expected outputs._
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
 | Non-numeric values will not be accepted | ! | "Please enter a valid number" | 
+| The number is 0 | 0 | "Sorry, I can't count to 0, please enter a new number!" | 
 | A number does not contain a "1", "2", or "3" | 5 | "5" | 
-| A number contains a decimal | 5.5 | "5" | 
+| A number contains a decimal | 5.7 | "5" | 
 | A number contains a "1" | 11 |  "Beep!" | 
 | A number contains a "2" | 2 | "Boop!" |
 | A number contains a "3" | 37 | "Won't you be my neighbor?" |

@@ -18,15 +18,18 @@ $( document ).ready(function() {
   $("#userInputForm").submit(function() {
     event.preventDefault()
 
-    // if($("#userNumInput").val() === 0) {
-    //   alert("Please enter a valid number and try again!");
-    // }
-    
-
-    const parsedUserInput = parseInt($("#userNumInput").val());
-    const userNameInput = $("#userNameInput").val();
-
-    const resultOutput = beepBoopOrNeighbor(parsedUserInput, userNameInput);
+    if($("#userNumInput").val().trim().length === 0){
+      alert('Please enter a number!')
+    } else if (parseInt($("#userNumInput").val()) > 1000) {
+      alert("Please enter a number less than 1000!")
+    } else if(isNaN($("#userNumInput").val())) {
+      alert("Please enter a number!")
+    } else if($("#userNumInput").val() === "0") {
+      alert("Sorry, I can't count to 0, please enter a new number!");
+    } else {
+      const parsedUserInput = parseInt($("#userNumInput").val());
+      const userNameInput = $("#userNameInput").val();
+      const resultOutput = beepBoopOrNeighbor(parsedUserInput, userNameInput);
 
     for(i=0; i<resultOutput.length; i++) {
       $("#resultsList").append(resultOutput[i]);
@@ -34,13 +37,11 @@ $( document ).ready(function() {
 
     $("#containerDiv").hide();
     $("#resultsContainer").show();
-    $("#resetButtonTop").show();
-    $("#resetButtonLeft").show();
-    $("#resetButtonRight").show();
-    $("#resetButtonBottom").show();
+    $(".resetButton").show();
 
-      $(".resetButton").click(function() {
-        location.reload();
-      });
-  });
-});
+    $(".resetButton").click(function() {
+      location.reload();
+      })
+    }
+  })
+})
