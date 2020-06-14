@@ -22,7 +22,7 @@ _The chart below shows all possible input behaviors and their expected outputs._
 | ------------- |:-------------:| -----:|
 | Non-numeric values will not be accepted | ! | "Please enter a valid number" | 
 | The number is 0 | 0 | "Sorry, I can't count to 0, please enter a new number!" | 
-| The number is greater than 1000 | 1001 | "Please enter a number smaller than 1000!" | 
+| The number is greater than 5000 | 5001 | "Please enter a number smaller than 5000!" | 
 | A number does not contain a "1", "2", or "3" | 5 | "5" | 
 | A number contains a decimal | 5.7 | "5" | 
 | A number contains a "1" | 11 |  "Beep!" | 
