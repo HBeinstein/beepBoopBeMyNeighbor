@@ -5,7 +5,7 @@ body {
 }
 
 p {
-  font-size: 2.2em;
+  font-size: 2.1em;
   font-weight: 400;
   margin: 0;
 }
@@ -86,7 +86,7 @@ input[type="text"]:focus {
 }
 
 input[type="text"]:hover {
-  width: 22em;
+  width: 20em;
 } 
 
 ::placeholder {
@@ -176,6 +176,7 @@ input[type="text"]:hover {
   grid-row: 1 / span 1;
   justify-self: left;
   padding: 0 1.5rem;
+  transition: all 0.15s ease-in-out;
 }
 
 #howItWorks {
@@ -200,6 +201,7 @@ input[type="text"]:hover {
 .resetButton {
   transition: all 0.15s ease-in-out;
 }
+
 .resetButton:hover {
   color: #FCD846;
 }

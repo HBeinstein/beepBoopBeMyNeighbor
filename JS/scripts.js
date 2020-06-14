@@ -21,7 +21,7 @@ $( document ).ready(function() {
     if($("#userNumInput").val().trim().length === 0){
       alert('Please enter a number!')
       $("#userNumInput").val('');
-    } else if (parseInt($("#userNumInput").val()) > 1000) {
+    } else if (parseInt($("#userNumInput").val()) > 5000) {
       alert("Please enter a number less than 1000!")
       $("#userNumInput").val('');
     } else if(isNaN($("#userNumInput").val())) {
