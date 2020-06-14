@@ -20,12 +20,16 @@ $( document ).ready(function() {
 
     if($("#userNumInput").val().trim().length === 0){
       alert('Please enter a number!')
+      $("#userNumInput").val('');
     } else if (parseInt($("#userNumInput").val()) > 1000) {
       alert("Please enter a number less than 1000!")
+      $("#userNumInput").val('');
     } else if(isNaN($("#userNumInput").val())) {
       alert("Please enter a number!")
+      $("#userNumInput").val('');
     } else if($("#userNumInput").val() === "0") {
       alert("Sorry, I can't count to 0, please enter a new number!");
+      $("#userNumInput").val('');
     } else {
       const parsedUserInput = parseInt($("#userNumInput").val());
       const userNameInput = $("#userNameInput").val();
