@@ -13,6 +13,7 @@ _This program was created as a way to practice arrays and looping. A user is abl
 * Clone the project from its GitHub repository (https://github.com/HBeinstein/beepBoopBeMyNeighbor).
 * Open in your code editor of choice.
 * Drag index.html file into your browser or double click it to view site.
+* View this site live on ghpages at: https://hbeinstein.github.io/beepBoopBeMyNeighbor/.
 
 
 ## Specifications
